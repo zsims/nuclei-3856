@@ -1,0 +1,18 @@
+id: resolver-repro
+
+info:
+  name: Example
+  author: zsims
+  severity: medium
+  description: Example
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    matchers:
+      - type: word
+        part: body
+        words:
+          - 'Example Domain'
